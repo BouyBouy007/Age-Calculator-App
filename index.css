@@ -1,0 +1,155 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  padding: 50px 50px;
+  background-color: hsl(0, 0%, 100%);
+  width: 700px;
+  border-radius: 20px 20px 200px 20px;
+}
+
+.user-input-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  padding-bottom: 40px;
+}
+
+.top-text {
+  color: hsl(0, 1%, 44%);
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.invalid-top-text {
+  color: hsl(0, 100%, 67%);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.user-input {
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  width: 120px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  padding: 20px 20px;
+  text-transform: uppercase;
+}
+
+.invalid-user-input {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.error-message {
+  display: none;
+  color: hsl(0, 100%, 67%);
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.display-error-message {
+  display: flex;
+}
+
+.submit-button {
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  padding: 20px 20px;
+  bottom: -40px;
+  right: 0px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+.submit-button:active {
+  opacity: 0.8;
+}
+
+.birthday-container {
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 120px;
+  font-style: italic;
+  line-height: 140px;
+}
+
+.age {
+  color: hsl(259, 100%, 65%);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+  .main-container {
+    width: 200px;
+    padding: 30px 30px 30px 20px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .top-text {
+    font-size: 10px;
+  }
+
+  .user-input-container {
+    margin-bottom: 20px;
+  }
+
+  .user-input {
+    font-size: 16px;
+    width: 50px;
+    padding: 6px 6px;
+    margin-right: 10px;
+  }
+
+  .error-message {
+    font-size: 6px;
+  }
+
+  .submit-button {
+    height: 26px;
+    width: 26px;
+    border-radius: 26px;
+    padding: 13px 13px;
+    bottom: -26px;
+    right: 70px;
+  }
+
+  .birthday-container {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .attribution {
+    font-size: 8px;
+  }
+}

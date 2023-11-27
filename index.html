@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="user-input-container">
+      <div class="user-details">
+        <div class="js-text-day top-text">
+          Day
+        </div>
+        <input class="js-input-day user-input" id="day" name="day" 
+        maxlength="2" placeholder="DD">
+        <div class="js-day-error-message error-message">
+          Must be a valid day
+        </div>
+      </div>
+      <div class="user-details">
+        <div class="js-text-month top-text">
+          Month
+        </div>
+        <input class="js-input-month user-input" id="month" name="month" 
+        maxlength="2" placeholder="MM">
+        <div class="js-month-error-message error-message">
+          Must be a valid month
+        </div>
+      </div>
+      <div class="user-details">
+        <div class="js-text-year top-text">
+          Year
+        </div>
+        <input class="js-input-year user-input" id="year" name="year" 
+        maxlength="4" placeholder="YYYY">
+        <div class="js-year-error-message error-message">
+          Must be in the past
+        </div>
+      </div>
+        <img class="js-submit-button submit-button" alt="downward-arrow" src="assets/images/icon-arrow.svg">
+    </div>
+    <div class="birthday-container">
+      <div>
+        <span class="js-age-years age">--</span>years
+      </div>
+      <div>
+        <span class="js-age-months age">--</span>months
+      </div>
+      <div>
+        <span class="js-age-days age">--</span>days
+      </div>
+    </div>
+  </div>
+   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Justin Seow Jing Nyap</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
